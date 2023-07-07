@@ -1,0 +1,16 @@
+---
+import LogoI from '../assets/visuals/intgrator.webp'
+import { Picture } from '@astrojs/image/components';
+---
+
+<div class="flex items-center">
+<Picture
+  widths={[50]}
+  sizes="(max-width: 768px)"
+  width={50}
+  height={50}
+  src={LogoI}
+  alt='Logo Integrator'
+/>
+<span class="ml-1 text-accentI font-bold text-lg dark:text-secondaryI">Integrator</span>
+</div>
