@@ -5,7 +5,7 @@ import Button from '~/components/ui/Button.astro';
 import Card from '~/components/ui/Card.astro';
 import Typography from '~/components/ui/Typography.astro';
 import Line from '~/components/ui/Vertical.astro';
-import { Icon } from 'astro-icon';
+// import { Icon } from 'astro-icon';
 
 const meta = {
   title: SITE.title,
@@ -15,59 +15,171 @@ const meta = {
 ---
 
 <Layout {meta}>
-  <div class="mt-6 ml-10">
-    <h1 class="text-center m-6">Button section</h1>
-    <div class="flex space-x-3 flex-wrap justify-start">
-      <div class="flex flex-col space-y-4">
-        <Button link="#" mode={'primary'} size={'lg'}>Click LG</Button>
-        <Button link="#" mode={'primary'} size={'md'}>Click MD</Button>
-        <Button link="#" mode={'primary'} size={'sm'}>Click SM</Button>
-      </div>
-      <div class="flex flex-col space-y-4">
-        <Button link="#" mode={'ghost'} size={'lg'}>Click LG</Button>
-        <Button link="#" mode={'ghost'} size={'md'}>Click MD</Button>
-        <Button link="#" mode={'ghost'} size={'sm'}>Click SM</Button>
-      </div>
-      <div class="flex flex-col space-y-4">
-        <Button link="#" mode={'link'} size={'lg'}>Click LG</Button>
-        <Button link="#" mode={'link'} size={'md'}>Click MD</Button>
-        <Button link="#" mode={'link'} size={'sm'}>Click SM</Button>
-      </div>
-    </div>
-  </div>
-  <div class="mt-20 ml-10 border-t-2 border-special">
-    <h1 class="text-center m-6">Card Section</h1>
-    <div class="flex flex-wrap items-center justify-around">
-      <Card>
-        <h1 slot="title">Hello World!</h1>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum quis molestiae officia ut deleniti aperiam
-          similique nesciunt delectus? Perspiciatis, incidunt.
-        </p>
-        <Icon name="tabler:clock" slot="logo" class="w-12" />
-      </Card>
-      <Card>
-        <h1 slot="title">Hello World!</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nihil quae distinctio laboriosam
-          debitis. Rerum distinctio dolor accusantium eligendi, natus repellendus dolorum facere alias deleniti
-          temporibus voluptatum ea sit tempora, aspernatur reprehenderit error quam ducimus quibusdam ad mollitia
-          laboriosam! Quibusdam.
-        </p>
-        <Icon name="tabler:clock" slot="logo" class="w-12" />
-      </Card>
-    </div>
-    <div class="mt-20 ml-10 border-t-2 border-special">
-      <h1 class="text-center m-6">Typography Section</h1>
-      <div>
-        <Typography type={'title'} size={'lg'}>Lorem ipsum dolor <span class="text-special">sit amet consectetur.</span></Typography>
-        <Typography type={'title'} size={'md'}><span class="text-special">Lorem ipsum</span> dolor sit amet consectetur.</Typography>
-        <Typography type={'title'} size={'sm'}>Lorem ipsum dolor <span class="text-special">sit</span> amet consectetur.</Typography>
-        <Typography type={'describtion'}> Lorem ipsum dolor sit amet consectetur <span class="text-special">adipisicing elit.</span> Nisi necessitatibus est impedit, recusandae nobis dolorem cupiditate assumenda voluptatibus <span class="text-special">sunt facere. </span></Typography>
+  <div>
+    <!-- ========================================= HERO ========================================================== -->
+    <div></div>
+    <div class="flex flex-col justify-center items-center w-full text-center my-20">
+      <Typography type={'title'} size="lg">
+        <span class="text-special">Integrator</span> a free open-source <br /> software & ease to ues
+      </Typography>
+      <Typography classes="max-w-[80vw] text-sm mt-2" type={'describtion'}>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, eveniet cumque iste repellat optio dolorum eum
+        illo earum aliquid cum delectus itaque aliquam. Nobis, rem molestias ab id recusandae autem ullam consectetur
+        reiciendis eveniet consequatur exercitationem soluta quis fuga. Magnam blanditiis omnis odio consectetur totam
+        obcaecati saepe, incidunt repudiandae corrupti ab ratione sed sit asperiores odit vero hic unde cum earum
+        aspernatur a eligendi. Incidunt, fuga? Sequi facilis perferendis voluptatibus?
+      </Typography>
+      <div class="flex justify-evenly w-full mt-4">
+        <Button mode={'primary'} size={'md'} link="#">Integration</Button><Button  link="#" mode={'ghost'} size={'md'}>
+          Documenation
+        </Button>
       </div>
     </div>
-    <div class="mt-20 ml-10 border-t-2 border-special">
-      <h1 class="text-center m-6">Vertical Horizontal Lines</h1>
+    <div class="w-full h-1"><Line mode="special" /></div>
+    <!-- =========================================Offers ========================================================== -->
+    <div class="w-full h-full text-center py-10">
+      <Typography type={'title'} size="lg">
+        What does <span class="text-special">Integrator</span> offer
+      </Typography>
+      <Typography type="describtion">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nobis dicta laborum ad dolor enim quasi facere
+        quia, recusandae velit doloribus consequuntur et tenetur obcaecati harum magnam commodi vitae! Quo!
+      </Typography>
+      <div class="flex justify-center items-center w-full space-y-8 flex-col mt-5">
+        <Card>
+          <span slot="title">Authontection</span>
+          <span
+            >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic in eligendi sed quam, soluta commodi
+            aspernatur itaque deleniti fugiat voluptatibus debitis consequatur et nihil, est, sequi officiis dignissimos
+            facere maxime.</span
+          >
+        </Card>
+        <Card>
+          <span slot="title">Authontection</span>
+          <span
+            >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic in eligendi sed quam, soluta commodi
+            aspernatur itaque deleniti fugiat voluptatibus debitis consequatur et nihil, est, sequi officiis dignissimos
+            facere maxime.</span
+          >
+        </Card>
+        <Card>
+          <span slot="title">Authontection</span>
+          <span
+            >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic in eligendi sed quam, soluta commodi
+            aspernatur itaque deleniti fugiat voluptatibus debitis consequatur et nihil, est, sequi officiis dignissimos
+            facere maxime.</span
+          >
+        </Card>
+        <Card>
+          <span slot="title">Authontection</span>
+          <span
+            >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic in eligendi sed quam, soluta commodi
+            aspernatur itaque deleniti fugiat voluptatibus debitis consequatur et nihil, est, sequi officiis dignissimos
+            facere maxime.</span
+          >
+        </Card>
+        <Card>
+          <span slot="title">Authontection</span>
+          <span
+            >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic in eligendi sed quam, soluta commodi
+            aspernatur itaque deleniti fugiat voluptatibus debitis consequatur et nihil, est, sequi officiis dignissimos
+            facere maxime.</span
+          >
+        </Card>
+      </div>
+    </div>
+    <div class="w-full h-1"><Line mode="special" /></div>
+    <!-- ========================================= Goals ========================================================== -->
+    <div class="w-full h-full text-center py-10">
+      <Typography type={'title'} size="lg">
+        What does <span class="text-special">Integrator</span> offer
+      </Typography>
+      <div class="pt-10 flex flex-col space-y-10 justify-center items-center">
+        <div class="flex items-center p-2">
+          <div class="bg-special rounded-full mr-2 p-8 max-w-[80px] max-h-[80px] flex justify-center items-center">
+            sdfdsfs
+          </div>
+          <div class="flex flex-col justify-start items-start">
+            <Typography type={'title'} size="md">Subject</Typography>
+            <Typography type={'describtion'} classes="text-left">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus veniam explicabo quas facilis, nihil
+              obcaecati.
+            </Typography>
+          </div>
+        </div>
+        <div class="flex items-center p-2">
+          <div class="bg-special rounded-full mr-2 p-8 max-w-[80px] max-h-[80px] flex justify-center items-center">
+            sdfdsfs
+          </div>
+          <div class="flex flex-col justify-start items-start">
+            <Typography type={'title'} size="md">Subject</Typography>
+            <Typography type={'describtion'} classes="text-left">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus veniam explicabo quas facilis, nihil
+              obcaecati.
+            </Typography>
+          </div>
+        </div>
+        <div class="flex items-center p-2">
+          <div class="bg-special rounded-full mr-2 p-8 max-w-[80px] max-h-[80px] flex justify-center items-center">
+            sdfdsfs
+          </div>
+          <div class="flex flex-col justify-start items-start">
+            <Typography type={'title'} size="md">Subject</Typography>
+            <Typography type={'describtion'} classes="text-left">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus veniam explicabo quas facilis, nihil
+              obcaecati.
+            </Typography>
+          </div>
+        </div>
+        <div class="flex items-center p-2">
+          <div class="bg-special rounded-full mr-2 p-8 max-w-[80px] max-h-[80px] flex justify-center items-center">
+            sdfdsfs
+          </div>
+          <div class="flex flex-col justify-start items-start">
+            <Typography type={'title'} size="md">Subject</Typography>
+            <Typography type={'describtion'} classes="text-left">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus veniam explicabo quas facilis, nihil
+              obcaecati.
+            </Typography>
+          </div>
+        </div>
+        <div class="flex items-center p-2">
+          <div class="bg-special rounded-full mr-2 p-8 max-w-[80px] max-h-[80px] flex justify-center items-center">
+            sdfdsfs
+          </div>
+          <div class="flex flex-col justify-start items-start">
+            <Typography type={'title'} size="md">Subject</Typography>
+            <Typography type={'describtion'} classes="text-left">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus veniam explicabo quas facilis, nihil
+              obcaecati.
+            </Typography>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ========================================= Contact us ========================================================== -->
+    <div class="w-full h-1"><Line mode="special" /></div>
+    <div class="w-full">
+      <div class="w-full h-full text-center py-10 px-5">
+        <Typography type={'title'} size="lg">
+          <span class="text-special">Contact</span> us
+        </Typography>
+        <div class="my-10">
+          <div class="p-5 border-2 border-special rounded-t-2xl flex flex-col items-end">
+            <form class="p-1 mb-5 flex flex-col">
+              <input placeholder="#" type="text" class="bg-lighten dark:bg-darken  border-2 border-special rounded-xl w-[70vw]" />
+              <input placeholder="#" type="text" class="bg-lighten dark:bg-darken border-2 border-special rounded-xl w-[80vw] my-5" />
+              <textarea placeholder="#" class="bg-lighten border-2 dark:bg-darken border-special rounded-3xl h-44 w-full"></textarea>
+            </form>
+            <Button mode={"primary"} size='md' link="#">Submit</Button>
+          </div>
+          <div class="w-full bg-special h-20 flex justify-center items-center rounded-b-2xl">
+            <div class="p-8 bg-lighten dark:bg-darken rounded-full"/>
+            <div class="p-8 bg-lighten dark:bg-darken rounded-full mx-5"/>
+            <div class="p-8 bg-lighten dark:bg-darken rounded-full"/>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </Layout>
