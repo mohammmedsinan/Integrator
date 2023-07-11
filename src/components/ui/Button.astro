@@ -1,0 +1,28 @@
+---
+export interface Props {
+  link?: string;
+  size?: string | "sm" | "md" | "lg";
+  mode?: string | "primary" | "ghost" | "link" ;
+
+}
+
+const {
+  link = await Astro.slots.render('link'),
+  size = await Astro.slots.render('size'),
+  mode = await Astro.slots.render('mode'),
+} = Astro.props;
+---
+
+<a href={link} 
+  class:list={[
+    mode ==="primary"&&"text-lighten bg-special dark:text-darken",
+    mode ==="link"&& "text-special bg-lighten dark:bg-darken",
+    mode ==="ghost"&&"border-2 border-special text-special" ,
+    size ==="sm"&&"text-sm  font-medium w-32 py-2" ,
+    size ==="md"&&"text-lg  w-40 py-2 rounded-3xl" ,
+    size ==="lg"&&"text-xl  w-48 py-3 rounded-3xl" 
+    ]}
+    class="block text-center rounded-3xl font-semibold"
+>
+  <slot />
+</a>

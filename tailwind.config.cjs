@@ -8,9 +8,9 @@ module.exports = {
         primary: 'var(--aw-color-primary)',
         secondary: 'var(--aw-color-secondary)',
         accent: 'var(--aw-color-accent)',
-        primaryI: 'var(--int-color-primary)',
-        secondaryI: 'var(--int-color-secondary)',
-        accentI: 'var(--int-color-accent)',
+        darken: 'var(--int-color-primary)',
+        lighten: 'var(--int-color-secondary)',
+        special: 'var(--int-color-accent)',
       },
       fontFamily: {
         sans: ['var(--aw-font-sans)', ...defaultTheme.fontFamily.sans],

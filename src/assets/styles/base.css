@@ -8,7 +8,7 @@
   }
 
   .text-muted {
-    color: var(--aw-color-text-muted);
+    color: var(--int-color-secondary);
   }
 
   .bg-light {
@@ -16,7 +16,7 @@
   }
 
   .bg-dark {
-    @apply bg-slate-900;
+    @apply bg-darken;
   }
 
   
@@ -31,6 +31,7 @@
   .btn-primary {
     @apply font-semibold bg-primary text-white border-primary hover:bg-secondary hover:border-secondary hover:text-white dark:text-white dark:bg-primary dark:border-primary dark:hover:border-secondary dark:hover:bg-secondary;
   }
+  
 }
 
 #header.scroll {

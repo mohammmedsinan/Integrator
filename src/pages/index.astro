@@ -1,7 +1,11 @@
 ---
 import { SITE } from '~/config.mjs';
 import Layout from '~/layouts/PageLayout.astro';
-
+import Button from '~/components/ui/Button.astro';
+import Card from '~/components/ui/Card.astro';
+import Typography from '~/components/ui/Typography.astro';
+import Line from '~/components/ui/Vertical.astro';
+import { Icon } from 'astro-icon';
 
 const meta = {
   title: SITE.title,
@@ -11,5 +15,59 @@ const meta = {
 ---
 
 <Layout {meta}>
-
+  <div class="mt-6 ml-10">
+    <h1 class="text-center m-6">Button section</h1>
+    <div class="flex space-x-3 flex-wrap justify-start">
+      <div class="flex flex-col space-y-4">
+        <Button link="#" mode={'primary'} size={'lg'}>Click LG</Button>
+        <Button link="#" mode={'primary'} size={'md'}>Click MD</Button>
+        <Button link="#" mode={'primary'} size={'sm'}>Click SM</Button>
+      </div>
+      <div class="flex flex-col space-y-4">
+        <Button link="#" mode={'ghost'} size={'lg'}>Click LG</Button>
+        <Button link="#" mode={'ghost'} size={'md'}>Click MD</Button>
+        <Button link="#" mode={'ghost'} size={'sm'}>Click SM</Button>
+      </div>
+      <div class="flex flex-col space-y-4">
+        <Button link="#" mode={'link'} size={'lg'}>Click LG</Button>
+        <Button link="#" mode={'link'} size={'md'}>Click MD</Button>
+        <Button link="#" mode={'link'} size={'sm'}>Click SM</Button>
+      </div>
+    </div>
+  </div>
+  <div class="mt-20 ml-10 border-t-2 border-special">
+    <h1 class="text-center m-6">Card Section</h1>
+    <div class="flex flex-wrap items-center justify-around">
+      <Card>
+        <h1 slot="title">Hello World!</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum quis molestiae officia ut deleniti aperiam
+          similique nesciunt delectus? Perspiciatis, incidunt.
+        </p>
+        <Icon name="tabler:clock" slot="logo" class="w-12" />
+      </Card>
+      <Card>
+        <h1 slot="title">Hello World!</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nihil quae distinctio laboriosam
+          debitis. Rerum distinctio dolor accusantium eligendi, natus repellendus dolorum facere alias deleniti
+          temporibus voluptatum ea sit tempora, aspernatur reprehenderit error quam ducimus quibusdam ad mollitia
+          laboriosam! Quibusdam.
+        </p>
+        <Icon name="tabler:clock" slot="logo" class="w-12" />
+      </Card>
+    </div>
+    <div class="mt-20 ml-10 border-t-2 border-special">
+      <h1 class="text-center m-6">Typography Section</h1>
+      <div>
+        <Typography type={'title'} size={'lg'}>Lorem ipsum dolor <span class="text-special">sit amet consectetur.</span></Typography>
+        <Typography type={'title'} size={'md'}><span class="text-special">Lorem ipsum</span> dolor sit amet consectetur.</Typography>
+        <Typography type={'title'} size={'sm'}>Lorem ipsum dolor <span class="text-special">sit</span> amet consectetur.</Typography>
+        <Typography type={'describtion'}> Lorem ipsum dolor sit amet consectetur <span class="text-special">adipisicing elit.</span> Nisi necessitatibus est impedit, recusandae nobis dolorem cupiditate assumenda voluptatibus <span class="text-special">sunt facere. </span></Typography>
+      </div>
+    </div>
+    <div class="mt-20 ml-10 border-t-2 border-special">
+      <h1 class="text-center m-6">Vertical Horizontal Lines</h1>
+    </div>
+  </div>
 </Layout>

@@ -1,0 +1,12 @@
+---
+export interface Props {
+    mode : "system"  | "special";
+    size? : number;
+}
+const {
+    mode = await Astro.slots.render('mode'),
+} = Astro.props;
+const classHolders = mode == "system" &&"bg-darken dark:bg-lighten" || mode == "special" && "bg-special";
+---
+
+<div class={`${classHolders} w-auto h-full`} />

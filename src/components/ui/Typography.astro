@@ -1,0 +1,16 @@
+---
+export interface Props {
+  type: 'title' | 'describtion';
+  size?: 'sm' | 'md' | 'lg';
+  color?: 'special' | 'lighten' | 'darken' | 'system';
+}
+const {
+  type = await Astro.slots.render('type'),
+  size = await Astro.slots.render('size'),
+} = Astro.props;
+
+const sizeChecker = size === "sm" && "text-[max(1.5vw,14px)]" || size === "md" && "text-[max(2.5vw,17px)]"  || size === "lg" && "text-[max(4vw,30px)]"
+---
+
+{type === 'title' && <h1 class={`text-darken dark:text-lighten font-medium ${sizeChecker}`}><slot /></h1>}
+{type === 'describtion' && <p class="text-darken dark:text-lighten"><slot /></p>}

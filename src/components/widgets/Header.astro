@@ -3,6 +3,7 @@ import { Icon } from 'astro-icon';
 import Logo from '~/components/Logo.astro';
 import ToggleTheme from '~/components/common/ToggleTheme.astro';
 import ToggleMenu from '~/components/common/ToggleMenu.astro';
+import Button from '~/components/ui/Button.astro'
 
 import { getHomePermalink, getAsset } from '~/utils/permalinks';
 
@@ -114,16 +115,10 @@ const {
         {
           actions?.length ? (
             <span class="ml-4">
-              {actions.map(({ text, href, type }) => (
-                <a
-                  class:list={[
-                    'btn ml-2 py-2.5 px-5.5 md:px-6 font-semibold shadow-none text-sm',
-                    { 'btn-ghost': type === 'ghost', 'btn-primary': type === 'primary' },
-                  ]}
-                  href={href}
-                >
+              {actions.map(({ text="", href="", type="" ,size=""}) => (
+                <Button mode={type} link={href} size={size}>
                   <Fragment set:html={text} />
-                </a>
+                </Button>
               ))}
             </span>
           ) : (
