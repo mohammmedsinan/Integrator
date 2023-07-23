@@ -2,82 +2,19 @@
 import Card from '~/components/ui/Card.astro';
 import Typography from '~/components/ui/Typography.astro';
 
-export interface cardsInfoProps {
-    icon:string;
-    title:string;
-    description:string;
-}
-
 export interface Props {
-cardsInfo: [{cardsInfoProps}];
-
+cardsInfo: [{icon:string; title:string; description:string;}];
 }
-
-const {
-    cardsInfo = await Astro.slots.render('cardsInfo'),
-} = Astro.props;
+const { cardsInfo } = Astro.props;
 ---
-
-
 
 <div class="w-full h-full text-center py-10">
     <Typography type={'title'} size="lg">
         <slot name="title"/>
     </Typography>
     -------------------------------
-    <Typography type="describtion" classes="px-20">
-        <slot name="description"/>
-    </Typography>
-    <div
-      class="flex justify-center items-center w-full space-y-8 flex-col mt-5 md:flex-row md:flex-wrap md:space-y-0 md:items-end"
-    >
-      <Card>
-        <span slot="title">Authontection</span>
-        <span
-          >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic in eligendi sed quam, soluta commodi
-          aspernatur itaque deleniti fugiat voluptatibus debitis consequatur et nihil, est, sequi officiis dignissimos
-          facere maxime.</span
-        >
-      </Card>
-      <Card>
-        <span slot="title">Authontection</span>
-        <span
-          >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic in eligendi sed quam, soluta commodi
-          aspernatur itaque deleniti fugiat voluptatibus debitis consequatur et nihil, est, sequi officiis dignissimos
-          facere maxime.</span
-        >
-      </Card>
-      <Card>
-        <span slot="title">Authontection</span>
-        <span
-          >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic in eligendi sed quam, soluta commodi
-          aspernatur itaque deleniti fugiat voluptatibus debitis consequatur et nihil, est, sequi officiis dignissimos
-          facere maxime.</span
-        >
-      </Card>
-      <Card>
-        <span slot="title">Authontection</span>
-        <span
-          >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic in eligendi sed quam, soluta commodi
-          aspernatur itaque deleniti fugiat voluptatibus debitis consequatur et nihil, est, sequi officiis dignissimos
-          facere maxime.</span
-        >
-      </Card>
-      <Card>
-        <span slot="title">Authontection</span>
-        <span
-          >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic in eligendi sed quam, soluta commodi
-          aspernatur itaque deleniti fugiat voluptatibus debitis consequatur et nihil, est, sequi officiis dignissimos
-          facere maxime.</span
-        >
-      </Card>
-      <Card>
-        <span slot="title">Authontection</span>
-        <span
-          >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic in eligendi sed quam, soluta commodi
-          aspernatur itaque deleniti fugiat voluptatibus debitis consequatur et nihil, est, sequi officiis dignissimos
-          facere maxime.</span
-        >
-      </Card>
+    <Typography type="describtion" classes="px-20"> <slot name="description"/> </Typography>
+    <div class="flex justify-center items-center w-full space-y-8 flex-col mt-5 md:flex-row md:flex-wrap md:space-y-0 md:items-end">
+    {cardsInfo.map(element => { return( <Card> <span slot="logo">Google</span> <span slot="title">{element.title}</span> <span>{element.description}</span> </Card> ) })}
     </div>
   </div>

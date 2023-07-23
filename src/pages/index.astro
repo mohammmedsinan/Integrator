@@ -1,10 +1,7 @@
 ---
 import { SITE } from '~/config.mjs';
 import Layout from '~/layouts/PageLayout.astro';
-import Button from '~/components/ui/Button.astro';
-import Typography from '~/components/ui/Typography.astro';
 import Line from '~/components/ui/Vertical.astro';
-import { Icon } from 'astro-icon';
 import {content} from '~/content'
 import HeroImage from '~/assets/visuals/logo.svg';
 
@@ -12,6 +9,8 @@ import HeroImage from '~/assets/visuals/logo.svg';
 //==================Widgets=======================
 import Hero from '~/components/widget/hero.astro'
 import Offer from '~/components/widget/offer.astro'
+import Goal from '~/components/widget/goal.astro'
+import Contact from '~/components/widget/contact.astro'
 
 //================Content========================
 const { landingPage } = content
@@ -32,130 +31,20 @@ const meta = {
       <Fragment slot="title"><span class="text-special">Integrator</span> {landingPage.hero.title}</Fragment>
       <Fragment slot="description">{landingPage.hero.description}</Fragment>
     </Hero>
-    <div class="w-full h-1"><Line mode="special" /></div>
+    <div class="w-full h-0.5"><Line mode="special" /></div>
     <!-- =========================================Offers ========================================================== -->
-    <Offer cardsInfo={[
-      {icon:""}
-    ]}>
+    <Offer cardsInfo={landingPage.offer.cards}>
       <Fragment slot='title'>{landingPage.offer.title} <span class="text-special">Intergrator</span> offer</Fragment>
       <Fragment slot='description'>{landingPage.offer.description}</Fragment>
     </Offer>
-    <div class="w-full h-1"><Line mode="special" /></div>
+    <div class="w-full  h-0.5"><Line mode="special" /></div>
     <!-- ========================================= Goals ========================================================== -->
-    <div class="w-full h-full text-center py-10">
-      <Typography type={'title'} size="lg">
-        What does <span class="text-special">Integrator</span> offer
-      </Typography>
-      _______________________________
-      <Typography type="describtion" classes="px-20">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nobis dicta laborum ad dolor enim quasi facere
-        quia, recusandae velit doloribus consequuntur et tenetur obcaecati harum magnam commodi vitae! Quo!
-      </Typography>
-      <div>
-        <div class="pt-10 flex flex-col space-y-10 justify-center items-center">
-          <div class="flex items-center p-2">
-            <div class="bg-special rounded-full mr-2 max-w-[80px] max-h-[80px] flex justify-center items-center">
-              <Icon name="tabler:clock" class="w-20 p-2 text-lighten dark:text-darken" />
-            </div>
-            <div class="flex flex-col justify-start items-start">
-              <Typography type={'title'} size="md">Subject</Typography>
-              <Typography type={'describtion'} classes="text-left">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus veniam explicabo quas facilis, nihil
-                obcaecati.
-              </Typography>
-            </div>
-          </div>
-          _____________________________
-          <div class="flex items-center p-2">
-            <div class="bg-special rounded-full mr-2 max-w-[80px] max-h-[80px] flex justify-center items-center">
-              <Icon name="tabler:clock" class="w-20 p-2 text-lighten dark:text-darken" />
-            </div>
-            <div class="flex flex-col justify-start items-start">
-              <Typography type={'title'} size="md">Subject</Typography>
-              <Typography type={'describtion'} classes="text-left">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus veniam explicabo quas facilis, nihil
-                obcaecati.
-              </Typography>
-            </div>
-          </div>
-          _____________________________
-          <div class="flex items-center p-2">
-            <div class="bg-special rounded-full mr-2 max-w-[80px] max-h-[80px] flex justify-center items-center">
-              <Icon name="tabler:clock" class="w-20 p-2 text-lighten dark:text-darken" />
-            </div>
-            <div class="flex flex-col justify-start items-start">
-              <Typography type={'title'} size="md">Subject</Typography>
-              <Typography type={'describtion'} classes="text-left">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus veniam explicabo quas facilis, nihil
-                obcaecati.
-              </Typography>
-            </div>
-          </div>
-          _____________________________
-          <div class="flex items-center p-2">
-            <div class="bg-special rounded-full mr-2 max-w-[80px] max-h-[80px] flex justify-center items-center">
-              <Icon name="tabler:clock" class="w-20 p-2 text-lighten dark:text-darken" />
-            </div>
-            <div class="flex flex-col justify-start items-start">
-              <Typography type={'title'} size="md">Subject</Typography>
-              <Typography type={'describtion'} classes="text-left">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus veniam explicabo quas facilis, nihil
-                obcaecati.
-              </Typography>
-            </div>
-          </div>
-          _____________________________
-          <div class="flex items-center p-2">
-            <div class="bg-special rounded-full mr-2 max-w-[80px] max-h-[80px] flex justify-center items-center">
-              <Icon name="tabler:clock" class="w-20 p-2 text-lighten dark:text-darken" />
-            </div>
-            <div class="flex flex-col justify-start items-start">
-              <Typography type={'title'} size="md">Subject</Typography>
-              <Typography type={'describtion'} classes="text-left">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus veniam explicabo quas facilis, nihil
-                obcaecati.
-              </Typography>
-            </div>
-          </div>
-        </div>
-        <div class="hidden md:block w-1 h-10"><Line mode={'special'} /></div>
-      </div>
-    </div>
+    <Goal content={landingPage.goal.content}>
+      <Fragment slot='title'>{landingPage.goal.title} <span class="text-special">Integrator</span> offer</Fragment>
+      <Fragment slot='description'>{landingPage.goal.description}</Fragment>
+    </Goal>
     <!-- ========================================= Contact us ========================================================== -->
-    <div class="w-full h-1"><Line mode="special" /></div>
-    <div class="w-full">
-      <div class="w-full h-full text-center py-10 px-5">
-        <Typography type={'title'} size="lg">
-          <span class="text-special">Contact</span> us
-        </Typography>
-        _______________________________
-        <div class="my-10">
-          <div class="p-5 border-2 border-special rounded-t-2xl flex flex-col items-end">
-            <form class="p-1 mb-5 flex flex-col">
-              <input
-                placeholder="Enter your name"
-                type="text"
-                class="bg-lighten dark:bg-darken border-2 border-special rounded-xl w-[70vw] px-2 placeholder:text-sm placeholder:text-gray-600 dark:placeholder:text-gray-400"
-              />
-              <input
-                placeholder="Enter your email"
-                type="text"
-                class="bg-lighten dark:bg-darken border-2 border-special rounded-xl w-[80vw] my-5 px-2 placeholder:text-sm placeholder:text-gray-600 dark:placeholder:text-gray-400"
-              />
-              <textarea
-                placeholder="Subject"
-                class="bg-lighten border-2 dark:bg-darken border-special rounded-3xl h-44 w-full px-2 pt-2 placeholder:text-sm placeholder:text-gray-600 dark:placeholder:text-gray-400"
-              ></textarea>
-            </form>
-            <Button mode={'primary'} size="md" link="#">Submit</Button>
-          </div>
-          <div class="w-full bg-special h-20 flex justify-center items-center rounded-b-2xl">
-            <div class="p-8 bg-lighten dark:bg-darken rounded-full"></div>
-            <div class="p-8 bg-lighten dark:bg-darken rounded-full mx-5"></div>
-            <div class="p-8 bg-lighten dark:bg-darken rounded-full"></div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div class="w-full h-0.5"><Line mode="special" /></div>
+    <Contact></Contact>
   </div>
 </Layout>
