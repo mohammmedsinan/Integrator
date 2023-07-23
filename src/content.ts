@@ -31,11 +31,9 @@ export const content = {
             title: "What does",
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nobis dicta laborum ad dolor enim quasi facere quia, recusandae velit doloribus consequuntur et tenetur obcaecati harum magnam commodi vitae! Quo!",
             content: [
-                { title: "Subject", description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ", icon: "tabler:clock" },
-                { title: "Subject", description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ", icon: "tabler:clock" },
-                { title: "Subject", description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ", icon: "tabler:clock" },
-                { title: "Subject", description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ", icon: "tabler:clock" },
-                { title: "Subject", description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ", icon: "tabler:clock" },
+                { title: "Authantication", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nobis dicta laborum ad dolor enim quasi facere quia, ", icon: "tabler:clock" },
+                { title: "Authantication", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nobis dicta laborum ad dolor enim quasi facere quia, ", icon: "tabler:clock" },
+                { title: "Authantication", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nobis dicta laborum ad dolor enim quasi facere quia, ", icon: "tabler:clock" },
             ]
             
         }

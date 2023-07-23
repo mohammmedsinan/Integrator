@@ -3,7 +3,8 @@ import { SITE } from '~/config.mjs';
 import Layout from '~/layouts/PageLayout.astro';
 import Line from '~/components/ui/Vertical.astro';
 import {content} from '~/content'
-import HeroImage from '~/assets/visuals/logo.svg';
+import HeroImage from '~/assets/visuals/hero.svg';
+import GoalImage from '~/assets/visuals/goal.svg';
 
 
 //==================Widgets=======================
@@ -39,7 +40,7 @@ const meta = {
     </Offer>
     <div class="w-full  h-0.5"><Line mode="special" /></div>
     <!-- ========================================= Goals ========================================================== -->
-    <Goal content={landingPage.goal.content}>
+    <Goal content={landingPage.goal.content} img={GoalImage}>
       <Fragment slot='title'>{landingPage.goal.title} <span class="text-special">Integrator</span> offer</Fragment>
       <Fragment slot='description'>{landingPage.goal.description}</Fragment>
     </Goal>

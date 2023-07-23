@@ -3,31 +3,33 @@ import Button from '~/components/ui/Button.astro';
 import Typography from '~/components/ui/Typography.astro';
 ---
 
-<div class="w-full">
-    <div class="w-full h-full text-center py-10 px-5">
+<div class="w-full flex justify-center">
+    <div class="w-full h-full text-center py-10 px-5  max-w-[800px]">
       <Typography type={'title'} size="lg">
         <span class="text-special">Contact</span> us
       </Typography>
       _______________________________
       <div class="my-10">
-        <div class="p-5 border-2 border-special rounded-t-2xl flex flex-col items-end">
+        <div class="p-5 border-2 border-special rounded-t-2xl flex flex-col">
           <form class="p-1 mb-5 flex flex-col">
             <input
               placeholder="Enter your name"
               type="text"
-              class="bg-lighten dark:bg-darken border-2 border-special rounded-xl w-[70vw] px-2 placeholder:text-sm placeholder:text-gray-600 dark:placeholder:text-gray-400"
+              class="bg-lighten dark:bg-darken border-2 border-special rounded-xl w-[70%] px-3 placeholder:text-sm placeholder:text-gray-600 dark:placeholder:text-gray-400"
             />
             <input
               placeholder="Enter your email"
               type="text"
-              class="bg-lighten dark:bg-darken border-2 border-special rounded-xl w-[80vw] my-5 px-2 placeholder:text-sm placeholder:text-gray-600 dark:placeholder:text-gray-400"
+              class="bg-lighten dark:bg-darken border-2 border-special rounded-xl w-[80%] my-5 px-3 placeholder:text-sm placeholder:text-gray-600 dark:placeholder:text-gray-400"
             />
             <textarea
               placeholder="Subject"
-              class="bg-lighten border-2 dark:bg-darken border-special rounded-3xl h-44 w-full px-2 pt-2 placeholder:text-sm placeholder:text-gray-600 dark:placeholder:text-gray-400"
+              class="bg-lighten border-2 dark:bg-darken border-special rounded-3xl h-44 w-full px-3 pt-2 placeholder:text-sm placeholder:text-gray-600 dark:placeholder:text-gray-400"
             ></textarea>
           </form>
-          <Button mode={'primary'} size="md" link="#">Submit</Button>
+          <div class="w-full flex justify-end">
+            <Button mode={'primary'} size="md" link="#">Submit</Button>
+          </div>
         </div>
         <div class="w-full bg-special h-20 flex justify-center items-center rounded-b-2xl">
           <div class="p-8 bg-lighten dark:bg-darken rounded-full"></div>

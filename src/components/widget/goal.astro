@@ -1,30 +1,44 @@
 ---
 import Typography from '~/components/ui/Typography.astro';
 import { Icon } from 'astro-icon';
+import { Picture } from '@astrojs/image/components';
 
 export interface Props {
   content: [{ title: string; description: string; icon: string }];
+  img:any;
 }
 
-const { content } = Astro.props;
+const { content,
+  img = await Astro.slots.render('img'),
+} = Astro.props;
 ---
 
-<div class="w-full h-full text-center py-10">
+<div class="w-full h-full text-center pt-10">
   <Typography type={'title'} size="lg"> <slot name="title" /> </Typography>
   <Typography type="describtion" classes="px-20"> <slot name="description" /></Typography>
-  <div>
-    {content.map((element) => {
-        return (
-          <div class="pt-10 flex flex-col space-y-10 justify-center items-center">
-            <div class="flex items-center p-2">
-              <div class="bg-special rounded-full mr-2 max-w-[80px] max-h-[80px] flex justify-center items-center"><Icon name={element.icon} class="w-20 p-2 text-lighten dark:text-darken" /></div>
-              <div class="flex flex-col justify-start items-start">
-                <Typography type={'title'} size="md">{element.title} </Typography>
-                <Typography type={'describtion'} classes="text-left"> {element.description}</Typography>
-              </div>
-              </div>
-              _____________________________
-          </div>
-          )})}
+  <div class="flex items-start lg:px-32 md:px-5 pt-10">
+    <div class="mb-10">
+      {content.map((element) => {
+          return (
+            <div class="flex flex-col space-y-10 justify-center items-center mt-5">
+              <div class="flex items-center p-2">
+                <div class="bg-special rounded-full mr-2 max-w-[80px] max-h-[80px] flex justify-center items-center"><Icon name={element.icon} class="w-20 p-2 text-lighten dark:text-darken" /></div>
+                <div class="flex flex-col justify-start items-start">
+                  <Typography type={'title'} size="sm">{element.title} </Typography>
+                  <Typography type={'describtion'} classes="text-left"> {element.description}</Typography>
+                </div>
+                </div>
+            </div>)})}
+    </div>
+    <Picture
+      class="mx-auto rounded-md w-full md:block hidden"
+      widths={[400, 768, 1080, 2040]}
+      sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1080px, 2040px"
+      aspectRatio={1024 / 800}
+      loading="eager"
+      width={1024}
+      height={576}
+      src={img}
+      alt="Goal Image"/>
   </div>
 </div>
