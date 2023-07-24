@@ -28,20 +28,20 @@ const meta = {
 <Layout {meta}>
   <div>
     <!-- ========================================= HERO ========================================================== -->
-    <Hero FirstLink='#' SecondLink='#' img={HeroImage}>
+    <Hero FirstLink={landingPage.hero.heroLinks.link1} SecondLink={landingPage.hero.heroLinks.link2} img={HeroImage}>
       <Fragment slot="title"><span class="text-special">Integrator</span> {landingPage.hero.title}</Fragment>
       <Fragment slot="description">{landingPage.hero.description}</Fragment>
     </Hero>
     <div class="w-full h-0.5"><Line mode="special" /></div>
     <!-- =========================================Offers ========================================================== -->
     <Offer cardsInfo={landingPage.offer.cards}>
-      <Fragment slot='title'>{landingPage.offer.title} <span class="text-special">Intergrator</span> offer</Fragment>
+      <Fragment slot='title'>{landingPage.offer.title} <span class="text-special">Intergrator</span> offer ?</Fragment>
       <Fragment slot='description'>{landingPage.offer.description}</Fragment>
     </Offer>
     <div class="w-full  h-0.5"><Line mode="special" /></div>
     <!-- ========================================= Goals ========================================================== -->
     <Goal content={landingPage.goal.content} img={GoalImage}>
-      <Fragment slot='title'>{landingPage.goal.title} <span class="text-special">Integrator</span> offer</Fragment>
+      <Fragment slot='title'>{landingPage.goal.title} <span class="text-special"> Integrator</span> offer</Fragment>
       <Fragment slot='description'>{landingPage.goal.description}</Fragment>
     </Goal>
     <!-- ========================================= Contact us ========================================================== -->

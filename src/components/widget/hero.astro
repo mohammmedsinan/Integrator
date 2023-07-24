@@ -20,11 +20,11 @@ const {
 
 
 <div></div>
-<div class="flex flex-col justify-center w-full text-center my-10 lg:flex-row-reverse lg:m-0 lg:mt-16 lg:px-10 lg:align-top">
+<div class="flex flex-col justify-center w-full text-center my-10 lg:flex-row-reverse lg:m-0 lg:mt-10 lg:px-10 lg:align-top">
   <Picture
-    class="mx-auto rounded-md w-full"
-    widths={[400, 768, 1300, 2040]}
-    sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1300px, 2040px"
+    class="mx-auto rounded-md w-full md:pb-0 pb-5"
+    widths={[400, 768, 1000, 1800, 2040]}
+    sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 1350px) 1000px, (max-width: 2039px) 1800px, 2440px"
     aspectRatio={1024 / 576}
     loading="eager"
     width={1024}
@@ -36,13 +36,13 @@ const {
     <Typography type={'title'} size="md">
       <slot name="title"/>
     </Typography>
-    <Typography classes="max-w-[80vw] text-sm mt-2 m-auto" type={'describtion'}>
+    <Typography classes="max-w-[90vw] sm:max-w-[80vw] text-xs mt-2 m-auto sm:text-sm" type={'describtion'}>
       <slot name="description"/>
     </Typography>
     <div class="flex justify-evenly w-full mt-5 lg:justify-start">
-      <Button mode={'primary'} size={'md'} link={FirstLink}>Integration</Button>
+      <Button mode={'primary'} size={'md'} link={FirstLink}>contribute</Button>
       <span class="lg:px-5"></span>
-      <Button link={SecondLink} mode={'ghost'} size={'md'}>Documenation</Button>
+      <Button link={SecondLink} mode={'ghost'} size={'md'}>Updates</Button>
     </div>
   </div>
   <!-- <div>jhsdlkjfhsdlkjfhsadkjhf</div> -->

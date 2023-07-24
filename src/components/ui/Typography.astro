@@ -11,8 +11,8 @@ const {
   classes = await Astro.slots.render('classes'),
 } = Astro.props;
 
-const sizeChecker = size === "sm" && "text-[max(1.5vw,14px)]" || size === "md" && "text-[max(2.5vw,17px)]"  || size === "lg" && "text-[max(4vw,30px)]"
+const sizeChecker = size === "sm" && "text-[max(1.5vw,14px)]" || size === "md" && "text-[max(3vw,30px)]"  || size === "lg" && "text-[max(4vw,30px)]"
 ---
 
 {type === 'title' && <h1 class={`text-darken dark:text-lighten font-medium ${sizeChecker}`}><slot /></h1>}
-{type === 'describtion' && <p class={`text-gray-500 dark:text-gray-300 ${classes}`}><slot /></p>}
+{type === 'describtion' && <p class={`text-gray-500 dark:text-gray-300 text-[max(.8vw,13px)] ${classes}`}><slot /></p>}

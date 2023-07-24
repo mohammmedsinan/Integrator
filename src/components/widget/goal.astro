@@ -15,8 +15,9 @@ const { content,
 
 <div class="w-full h-full text-center pt-10">
   <Typography type={'title'} size="lg"> <slot name="title" /> </Typography>
-  <Typography type="describtion" classes="px-20"> <slot name="description" /></Typography>
-  <div class="flex items-start lg:px-32 md:px-5 pt-10">
+  -------------------------------
+  <Typography type="describtion" classes="sm:px-20 px-4"> <slot name="description" /></Typography>
+  <div class="flex items-start lg:px-20 md:px-5 pt-10">
     <div class="mb-10">
       {content.map((element) => {
           return (
@@ -28,7 +29,8 @@ const { content,
                   <Typography type={'describtion'} classes="text-left"> {element.description}</Typography>
                 </div>
                 </div>
-            </div>)})}
+            </div>
+            )})}
     </div>
     <Picture
       class="mx-auto rounded-md w-full md:block hidden"
