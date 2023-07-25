@@ -1,9 +1,11 @@
 # 🏮 Integrator
 
 
-🌟 _Based on AstroWind KitStarter Where the project did achieve 100% in lighthouse with 5 catagories_. 🌟
+🎇 _Based on AstroWind KitStarter Where the project did achieve 100% in lighthouse with 5 categories_. 🎇
 
-**AstroWind** is a free and open-source template to make your website using **[Astro 2.0](https://astro.build/blog/astro-2/) + [Tailwind CSS](https://tailwindcss.com/)**. Ready to start a new project and designed taking into account web best practices.
+**Integrator** is a free, open-source, easy to use, and high performance software helps you to integrate your favorite technology to your project in an easy and smooth way, also anyone can contribute to Integrator
+and make the web better place
+
 
 ## Features
 
