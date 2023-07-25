@@ -18,8 +18,14 @@ and make the web a better place
 - ✅ **Analytics** built-in Google Analytics, and Splitbee integration.
 
 <br>
+<br>
+<br>
 
 <img src="https://github.com/mohammmedsinan/Integrator/blob/master/src/assets/visuals/readme.jpeg" alt="AstroWind Theme Screenshot">
+
+<br>
+<br>
+<br>
 
 [![Mohammed Sinan](https://custom-icon-badges.demolab.com/badge/made%20by%20-onWidget-556bf2?style=flat-square&logo=onwidget&logoColor=white&labelColor=101827)](https://onwidget.com)
 [![License](https://img.shields.io/github/license/onwidget/astrowind?style=flat-square&color=dddddd&labelColor=000000)](https://github.com/onwidget/astrowind/blob/main/LICENSE.md)
