@@ -40,7 +40,6 @@ and make the web a better place
 - [Configuration](#configuration)
 - [Deploy](#deploy)
 - [Contributing](#contributing)
-- [Acknowledgements](#acknowledgements)
 - [License](#license)
 
 </details>
@@ -151,9 +150,6 @@ prefer.
 If you have any idea, suggestions or find any bugs, feel free to open a discussion, an issue or create a pull request.
 That would be very useful for all of us and we would be happy to listen and take action.
 
-## Acknowledgements
-
-Initially created by [onWidget](https://onwidget.com) and maintained by a community of [contributors](https://github.com/onwidget/astrowind/graphs/contributors).
 
 ## License
 
