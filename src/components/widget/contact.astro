@@ -11,24 +11,24 @@ import Typography from '~/components/ui/Typography.astro';
       _______________________________
       <div class="my-10">
         <div class="p-5 border-2 border-special rounded-t-2xl flex flex-col">
-          <form class="p-1 mb-5 flex flex-col">
+          <form class="p-1 mb-5 flex flex-col" name="contact" method="post" data-netlify="true" onsubmit="submit">
             <input
               placeholder="Enter your name"
-              type="text"
+              type="text" id=" name" name="name"
               class="bg-lighten dark:bg-darken border-2 border-special rounded-xl w-[70%] px-3 placeholder:text-sm placeholder:text-gray-600 dark:placeholder:text-gray-400"
             />
             <input
               placeholder="Enter your email"
-              type="text"
+              type="text" id="email" name="email"
               class="bg-lighten dark:bg-darken border-2 border-special rounded-xl w-[80%] my-5 px-3 placeholder:text-sm placeholder:text-gray-600 dark:placeholder:text-gray-400"
             />
             <textarea
-              placeholder="Subject"
+              placeholder="Subject" id="content" name="contet"
               class="bg-lighten border-2 dark:bg-darken border-special rounded-3xl h-44 w-full px-3 pt-2 placeholder:text-sm placeholder:text-gray-600 dark:placeholder:text-gray-400"
             ></textarea>
           </form>
           <div class="w-full flex justify-end">
-            <Button mode={'primary'} size="md" link="#">Submit</Button>
+            <Button mode={'primary'} size="md" link="#" button={true} props={{type:"submit"}}>Submit</Button>
           </div>
         </div>
         <div class="w-full bg-special h-20 flex justify-center items-center rounded-b-2xl">
