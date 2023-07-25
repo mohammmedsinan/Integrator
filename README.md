@@ -50,9 +50,8 @@ and make the web a better place
 
 📌 [https://integrat0r.netlify.app/](https://integrat0r.netlify.app/)
 
-<br>
 
-## Commands
+### Commands
 
 All commands are run from the root of the project, from a terminal:
 
