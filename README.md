@@ -45,7 +45,6 @@ and make the web a better place
 
 </details>
 
-<br>
 
 ## Demo
 
@@ -53,9 +52,7 @@ and make the web a better place
 
 <br>
 
-<br>
-
-### Commands
+## Commands
 
 All commands are run from the root of the project, from a terminal:
 
