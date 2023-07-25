@@ -18,61 +18,58 @@ export const content = {
       description:"Explore the perks that Integrator gives you when you will use it in your projects to see if it fits your needs, * also this is the list of things that we should achieved in the future*",
       cards: [
         {
-          icon: 'ant-design:dollar-circle-filled',
+          icon: 'ant-design:github-outlined',
           title: 'Open Source',
           description:'Open-source software anyone can contribute to it and You can read the rules of the contributors, also anyone Can use this project as a base for their project with Customizable themes and components with clean code.',
         },
         {
-          icon: 'ant-design:minus-circle-filled',
+          icon: 'ant-design:dollar-circle-outlined',
           title: 'No Fees',
-          description: 'No Fees required anyone can use this software in the Community, we are trying to deliver this product for Free Because we have a vision for better web Development With our software, fot those who wonder How we will get fund we have a model business.',
+          description: 'No Fees required anyone can use this software in the Community, we are trying to deliver this product for Free Because we have a vision for better web Development With our software, for those who wonder How we will get fund we have a model business.',
         },
         {
-          icon: 'ant-design:compass-filled',
+          icon: 'ant-design:compass-outlined',
           title: 'Support 11+ Framework',
           description: 'In this point we are focusing on deliver Javascript Frameworks integration to the software at the first, The next step we will bring more languages and Frameworks to the software for example {PHP , Java , Python, and more}  .',
         },
         {
-          icon: 'ant-design:info-circle-filled',
+          icon: 'ant-design:gold-outlined',
           title: 'Integrate 44+ Technology',
           description:'We will put the most used technologies and softwares, The next step will add more based on the developers needs and  trying to listen and be in touch with other developers from the community, also updating the software quickly.',
         },
         {
-          icon: 'ant-design:meh-filled',
+          icon: 'ant-design:pushpin-outlined',
           title: 'Well Documented',
-          description:
-            'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic in eligendi sed quam, soluta commodi aspernatur itaque deleniti fugiat voluptatibus debitis consequatur et nihil, est, sequi officiis dignissimosfacere maxime.',
+          description: 'Well Documented software, have so many tutorials, also you can integrate with any library or software with an easy way and explanations included, with a documentation page in the site help the beginners to integrate softwares in their project.',
         },
         {
-          icon: 'ant-design:chrome-filled',
+          icon: 'ant-design:cloud-server-outlined',
           title: 'Open API',
-          description:
-            'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic in eligendi sed quam, soluta commodi aspernatur itaque deleniti fugiat voluptatibus debitis consequatur et nihil, est, sequi officiis dignissimosfacere maxime.',
+          description: "We will build Open-API so other developers can talk with our back-end side and take some sort of data they need, likewise we want to build an artificial intelligence and inclusion in this software to make the developer's life cycle easier.",
         },
       ],
     },
     goal: {
       title: 'What does',
-      description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nobis dicta laborum ad dolor enim quasi facere quia, recusandae velit doloribus consequuntur et tenetur obcaecati harum magnam commodi vitae! Quo!',
+      description: 'The goals that we want to achieve in the future ',
       content: [
         {
-          title: 'Authantication',
+          title: 'Free-to-use',
           description:
             'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nobis dicta laborum ad dolor enim quasi facere quia, ',
-          icon: 'tabler:clock',
+          icon: 'ant-design:dollar-circle-filled',
         },
         {
-          title: 'Authantication',
+          title: 'Inclusion-with-AI',
           description:
             'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nobis dicta laborum ad dolor enim quasi facere quia, ',
-          icon: 'tabler:clock',
+          icon: 'ant-design:robot-filled',
         },
         {
-          title: 'Authantication',
+          title: 'Easy-to-use',
           description:
             'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nobis dicta laborum ad dolor enim quasi facere quia, ',
-          icon: 'tabler:clock',
+          icon: 'ant-design:code-filled',
         },
       ],
     },
