@@ -54,19 +54,19 @@ export const content = {
       description: 'The goals that we want to achieve in the future, ',
       content: [
         {
-          title: 'Free-to-use',
+          title: 'Stay up to date',
           description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nobis dicta laborum ad dolor enim quasi facere quia, ',
-          icon: 'ant-design:dollar-circle-filled',
+          icon: 'ic:round-update',
         },
         {
           title: 'Inclusion-with-AI',
           description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nobis dicta laborum ad dolor enim quasi facere quia, ',
-          icon: 'ant-design:robot-filled',
+          icon: 'ph:robot-fill',
         },
         {
           title: 'Easy-to-use',
           description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nobis dicta laborum ad dolor enim quasi facere quia, ',
-          icon: 'ant-design:code-filled',
+          icon: 'tabler:hand-click',
         },
       ],
     },
