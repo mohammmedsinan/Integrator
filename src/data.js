@@ -63,7 +63,7 @@ export const headerData = {
     //   href: getBlogPermalink(),
     // },
   ],
-  actions: [{ type: 'ghost',size:"sm", text: 'Integration', href: 'https://github.com/onwidget/astrowind' }],
+  actions: [{ type: 'ghost',size:"sm", text: 'Integration', href: 'https://github.com/mohammmedsinan/Integrator' }],
 };
 
 export const footerData = {
