@@ -3,8 +3,8 @@
 
 🎇 _Based on AstroWind KitStarter Where the project did achieve 100% in lighthouse with 5 categories_. 🎇
 
-**Integrator** is a free, open-source, easy to use, and high performance software helps you to integrate your favorite technology to your project in an easy and smooth way, also anyone can contribute to Integrator
-and make the web better place
+**Integrator** is a free, open-source, easy-to-use, and high-performance software that helps you to integrate your favorite technology into your project in an easy and smooth way, also anyone can contribute to Integrator
+and make the web a better place
 
 
 ## Features
@@ -19,7 +19,7 @@ and make the web better place
 
 <br>
 
-<img src="https://raw.githubusercontent.com/onwidget/.github/main/resources/astrowind/screenshot-astro2.jpg" alt="AstroWind Theme Screenshot">
+<img src="https://github.com/mohammmedsinan/Integrator/blob/master/src/assets/visuals/readme.jpeg" alt="AstroWind Theme Screenshot">
 
 [![Mohammed Sinan](https://custom-icon-badges.demolab.com/badge/made%20by%20-onWidget-556bf2?style=flat-square&logo=onwidget&logoColor=white&labelColor=101827)](https://onwidget.com)
 [![License](https://img.shields.io/github/license/onwidget/astrowind?style=flat-square&color=dddddd&labelColor=000000)](https://github.com/onwidget/astrowind/blob/main/LICENSE.md)
