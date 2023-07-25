@@ -51,21 +51,21 @@ export const content = {
     },
     goal: {
       title: 'What does',
-      description: 'The goals that we want to achieve in the future, ',
+      description: 'The goals that we want to achieve in the future with Integrator, and our vision to this promising software ',
       content: [
         {
-          title: 'Stay up to date',
-          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nobis dicta laborum ad dolor enim quasi facere quia, ',
+          title: 'Stay Up-To-Date',
+          description: 'Integrator is one of the softwares that has to be up to date for any update in programming community wether its a framework or a library.',
           icon: 'ic:round-update',
         },
         {
-          title: 'Inclusion-with-AI',
-          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nobis dicta laborum ad dolor enim quasi facere quia, ',
+          title: 'Inclusion-With-AI',
+          description: 'Next step in this project is to build an artificial intelligence that will help you to integrate other softwares to your project easily and automatic, also.',
           icon: 'ph:robot-fill',
         },
         {
-          title: 'Easy-to-use',
-          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nobis dicta laborum ad dolor enim quasi facere quia, ',
+          title: 'Expanding To Other Sectors.',
+          description: 'The future of Integrator is to Expanding the software for more programming sectors not just for (Web Development), To continue to grow with other programming communities.',
           icon: 'tabler:hand-click',
         },
       ],

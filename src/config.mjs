@@ -3,11 +3,11 @@ import defaultImage from './assets/images/default.png';
 const CONFIG = {
   name: 'AstroWind',
 
-  origin: 'https://astrowind.vercel.app',
+  origin: 'https://integrat0r.netlify.app/',
   basePathname: '/',
   trailingSlash: false,
 
-  title: 'AstroWind — Free template for create a website with Astro + Tailwind CSS',
+  title: 'Integrator — Free Open-Source Software',
   description:
     '🚀 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs.',
   defaultImage: defaultImage,
@@ -24,8 +24,8 @@ const CONFIG = {
     timeZone: 'UTC',
   }),
 
-  googleAnalyticsId: false, // or "G-XXXXXXXXXX",
-  googleSiteVerificationId: 'orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M',
+  googleAnalyticsId: true, // or "G-XXXXXXXXXX",
+  googleSiteVerificationId: 'G-05XTEMBMH7',
 
   blog: {
     disabled: false,
