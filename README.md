@@ -19,11 +19,9 @@ and make the web a better place
 
 <br>
 <br>
-<br>
 
 <img src="https://github.com/mohammmedsinan/Integrator/blob/master/src/assets/visuals/readme.jpeg" alt="AstroWind Theme Screenshot">
 
-<br>
 <br>
 <br>
 
@@ -38,11 +36,10 @@ and make the web a better place
 <summary>Table of Contents</summary>
 
 - [Demo](#demo)
-- [Getting started](#getting-started)
-  - [Project structure](#project-structure)
-  - [Commands](#commands)
-  - [Configuration](#configuration)
-  - [Deploy](#deploy)
+- [Project structure](#project-structure)
+- [Commands](#commands)
+- [Configuration](#configuration)
+- [Deploy](#deploy)
 - [Frequently Asked Questions](#frequently-asked-questions)
 - [Related Projects](#related-projects)
 - [Contributing](#contributing)
@@ -58,71 +55,6 @@ and make the web a better place
 📌 [https://integrat0r.netlify.app/](https://integrat0r.netlify.app/)
 
 <br>
-
-## Getting started
-
-**AstroWind** tries to give you quick access to creating a website using [Astro 2.0](https://astro.build/blog/astro-2/) + [Tailwind CSS](https://tailwindcss.com/). It's a free theme focuses on simplicity, good practices and high performance.
-
-Very little vanilla javascript is used only to provide basic functionality so that each developer decides which framework (React, Vue, Svelte, Solid JS...) to use and how to approach their goals..
-
-### Project structure
-
-Inside AstroWind template, you'll see the following folders and files:
-
-```
-/
-├── public/
-│   ├── robots.txt
-│   └── favicon.ico
-├── src/
-│   ├── assets/
-│   │   ├── images/
-│   │   └── styles/
-│   │       └── base.css
-│   ├── components/
-│   │   ├── blog/
-│   │   ├── common/
-│   │   ├── widgets/
-│   │   │   ├── Header.astro
-│   │   │   └── ...
-│   │   ├── CustomStyles.astro
-│   │   └── Logo.astro
-│   ├── content/
-│   │   ├── post/
-│   │   │   ├── post-slug-1.md
-│   │   │   ├── post-slug-2.mdx
-│   │   │   └── ...
-│   │   └-- config.ts
-│   ├── layouts/
-│   │   ├── BaseLayout.astro
-│   │   └── ...
-│   ├── pages/
-│   │   ├── [...blog]/
-│   │   │   ├── [category]/
-│   │   │   ├── [tag]/
-│   │   │   ├── [...page].astro
-│   │   │   └── index.astro
-│   │   ├── index.astro
-│   │   ├── 404.astro
-│   │   ├-- rss.xml.ts
-│   │   └── ...
-│   ├── utils/
-│   ├── config.mjs
-│   └── data.js
-├── package.json
-├── astro.config.mjs
-└── ...
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory if they do not require any transformation or in the `assets/` directory if they are imported directly.
-
-[![Edit AstroWind on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://githubbox.com/onwidget/astrowind/tree/main)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Update `config.mjs` and contents. Have fun!
 
 <br>
 
