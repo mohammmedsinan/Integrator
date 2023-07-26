@@ -24,7 +24,7 @@ const CONFIG = {
     timeZone: 'UTC',
   }),
 
-  googleAnalyticsId: "G-05XTEMBMH7", // or "G-XXXXXXXXXX",
+  googleAnalyticsId: process.env.GAid, // or "G-XXXXXXXXXX",
   googleSiteVerificationId: 'orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M',
 
   blog: {
