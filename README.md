@@ -9,13 +9,13 @@ and make the web a better place
 
 ## Features
 
-- 🎯
-- 🎯
-- 🎯
-- 🎯
-- 🎯
-- 🎯
-- 🎯
+- 🎯 **_Open Source_**
+- 🎯 **_No Fees_**
+- 🎯 **_Support 11+ Framework_**
+- 🎯 **_Integrate 44+ Technology_**
+- 🎯 **_Well Documented_**
+- 🎯 **_Open API_**
+- 🎯 **_KitStarter_**
 
 <br>
 <br>
