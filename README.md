@@ -1,7 +1,7 @@
 # 🏮 Integrator
 
 
-🎇 _Based on AstroWind KitStarter Where the project did achieve 100% in lighthouse with 5 categories_. 🎇
+🎇 _Based on AstroWind KitStarter, it achieved 100% in lighthouse with 5 categories_. 🎇
 
 **Integrator** is a free, open-source, easy-to-use, and high-performance software that helps you to integrate your favorite technology into your project in an easy and smooth way, also anyone can contribute to Integrator
 and make the web a better place
@@ -9,13 +9,13 @@ and make the web a better place
 
 ## Features
 
-- ✅ Integration with **Tailwind CSS** ([@astrojs/tailwind](https://docs.astro.build/en/guides/integrations-guide/tailwind/)) supporting **Dark mode**.
-- ✅ **Production-ready** scores in [Lighthouse](https://web.dev/measure/) and [PageSpeed Insights](https://pagespeed.web.dev/) reports.
-- ✅ **Fast and SEO friendly blog** with automatic **RSS feed** ([@astrojs/rss](https://docs.astro.build/en/guides/rss/)), [**MDX** support](https://docs.astro.build/en/guides/integrations-guide/mdx/), **Categories & Tags**, **Social Share**, ...
-- ✅ **Image optimization** ([@astrojs/images](https://docs.astro.build/en/guides/integrations-guide/image/)) and **Font optimization**.
-- ✅ Generation of **project sitemap** based on your routes ([@astrojs/sitemap](https://docs.astro.build/en/guides/integrations-guide/sitemap/)).
-- ✅ **Open Graph tags** for social media sharing.
-- ✅ **Analytics** built-in Google Analytics, and Splitbee integration.
+- 🎯 **_Open Source_** 
+- 🎯 **_No Fees_** required to integrate your favorite technology into your project.
+- 🎯 **_Support 11+ Frameworks_** 
+- 🎯 **_Integrate 44+ Technology_**
+- 🎯 **_Well Documented_** software, have so many tutorials, also you can integrate with any library or software in an easy way, and explanations are included.
+- 🎯 **_Open API_** 
+- 🎯 **_KitStarter_** You can use this repository as a base for your project.
 
 <br>
 <br>
