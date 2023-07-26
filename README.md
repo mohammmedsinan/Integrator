@@ -3,8 +3,8 @@
 
 🎇 _Based on AstroWind KitStarter Where the project did achieve 100% in lighthouse with 5 categories_. 🎇
 
-**Integrator** is a free, open-source, easy to use, and high performance software helps you to integrate your favorite technology to your project in an easy and smooth way, also anyone can contribute to Integrator
-and make the web better place
+**Integrator** is a free, open-source, easy-to-use, and high-performance software that helps you to integrate your favorite technology into your project in an easy and smooth way, also anyone can contribute to Integrator
+and make the web a better place
 
 
 ## Features
@@ -18,8 +18,12 @@ and make the web better place
 - ✅ **Analytics** built-in Google Analytics, and Splitbee integration.
 
 <br>
+<br>
 
-<img src="https://raw.githubusercontent.com/onwidget/.github/main/resources/astrowind/screenshot-astro2.jpg" alt="AstroWind Theme Screenshot">
+<img src="https://github.com/mohammmedsinan/Integrator/blob/master/src/assets/visuals/readme.jpeg" alt="AstroWind Theme Screenshot">
+
+<br>
+<br>
 
 [![Mohammed Sinan](https://custom-icon-badges.demolab.com/badge/made%20by%20-onWidget-556bf2?style=flat-square&logo=onwidget&logoColor=white&labelColor=101827)](https://onwidget.com)
 [![License](https://img.shields.io/github/license/onwidget/astrowind?style=flat-square&color=dddddd&labelColor=000000)](https://github.com/onwidget/astrowind/blob/main/LICENSE.md)
@@ -32,93 +36,19 @@ and make the web better place
 <summary>Table of Contents</summary>
 
 - [Demo](#demo)
-- [Getting started](#getting-started)
-  - [Project structure](#project-structure)
-  - [Commands](#commands)
-  - [Configuration](#configuration)
-  - [Deploy](#deploy)
-- [Frequently Asked Questions](#frequently-asked-questions)
-- [Related Projects](#related-projects)
+- [Commands](#commands)
+- [Configuration](#configuration)
+- [Deploy](#deploy)
 - [Contributing](#contributing)
-- [Acknowledgements](#acknowledgements)
 - [License](#license)
 
 </details>
 
-<br>
 
 ## Demo
 
 📌 [https://integrat0r.netlify.app/](https://integrat0r.netlify.app/)
 
-<br>
-
-## Getting started
-
-**AstroWind** tries to give you quick access to creating a website using [Astro 2.0](https://astro.build/blog/astro-2/) + [Tailwind CSS](https://tailwindcss.com/). It's a free theme focuses on simplicity, good practices and high performance.
-
-Very little vanilla javascript is used only to provide basic functionality so that each developer decides which framework (React, Vue, Svelte, Solid JS...) to use and how to approach their goals..
-
-### Project structure
-
-Inside AstroWind template, you'll see the following folders and files:
-
-```
-/
-├── public/
-│   ├── robots.txt
-│   └── favicon.ico
-├── src/
-│   ├── assets/
-│   │   ├── images/
-│   │   └── styles/
-│   │       └── base.css
-│   ├── components/
-│   │   ├── blog/
-│   │   ├── common/
-│   │   ├── widgets/
-│   │   │   ├── Header.astro
-│   │   │   └── ...
-│   │   ├── CustomStyles.astro
-│   │   └── Logo.astro
-│   ├── content/
-│   │   ├── post/
-│   │   │   ├── post-slug-1.md
-│   │   │   ├── post-slug-2.mdx
-│   │   │   └── ...
-│   │   └-- config.ts
-│   ├── layouts/
-│   │   ├── BaseLayout.astro
-│   │   └── ...
-│   ├── pages/
-│   │   ├── [...blog]/
-│   │   │   ├── [category]/
-│   │   │   ├── [tag]/
-│   │   │   ├── [...page].astro
-│   │   │   └── index.astro
-│   │   ├── index.astro
-│   │   ├── 404.astro
-│   │   ├-- rss.xml.ts
-│   │   └── ...
-│   ├── utils/
-│   ├── config.mjs
-│   └── data.js
-├── package.json
-├── astro.config.mjs
-└── ...
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory if they do not require any transformation or in the `assets/` directory if they are imported directly.
-
-[![Edit AstroWind on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://githubbox.com/onwidget/astrowind/tree/main)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Update `config.mjs` and contents. Have fun!
-
-<br>
 
 ### Commands
 
@@ -215,41 +145,11 @@ Now, your website is ready to be deployed. All generated files are located at
 `dist` folder, which you can deploy the folder to any hosting service you
 prefer.
 
-#### Deploy to Netlify
-
-Clone this repository on own GitHub account and deploy to Netlify:
-
-[![Netlify Deploy button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/onwidget/astrowind)
-
-#### Deploy to Vercel
-
-Clone this repository on own GitHub account and deploy to Vercel:
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fonwidget%2Fastrowind)
-
-<br>
-
-## Frequently Asked Questions
-
-- Why?
--
--
-
-<br>
-
-## Related projects
-
-- [TailNext](https://tailnext.vercel.app/) - Free template using Next.js 13 and Tailwind CSS with the new App Router.
-- [Qwind](https://qwind.pages.dev/) - Free template to make your website using Qwik + Tailwind CSS.
-
 ## Contributing
 
 If you have any idea, suggestions or find any bugs, feel free to open a discussion, an issue or create a pull request.
 That would be very useful for all of us and we would be happy to listen and take action.
 
-## Acknowledgements
-
-Initially created by [onWidget](https://onwidget.com) and maintained by a community of [contributors](https://github.com/onwidget/astrowind/graphs/contributors).
 
 ## License
 
