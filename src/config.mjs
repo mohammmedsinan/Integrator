@@ -1,4 +1,4 @@
-import defaultImage from './assets/images/default.png';
+import defaultImage from './assets/visuals/readme.jpeg';
 
 const CONFIG = {
   name: 'AstroWind',
@@ -23,7 +23,7 @@ const CONFIG = {
     day: 'numeric',
     timeZone: 'UTC',
   }),
-
+  // G-05XTEMBMH7
   googleAnalyticsId: process.env.GAid, // or "G-XXXXXXXXXX",
   googleSiteVerificationId: 'orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M',
 
