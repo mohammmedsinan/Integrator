@@ -8,8 +8,7 @@ const CONFIG = {
   trailingSlash: false,
 
   title: 'Integrator — Free Open-Source Software',
-  description:
-    '🚀 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs.',
+  description:'🏮 Integrator is a free, open-source, easy-to-use, and high-performance software that helps you to integrate your favorite technology into your project in an easy and smooth way🏮',
   defaultImage: defaultImage,
 
   defaultTheme: 'system', // Values: "system" | "light" | "dark" | "light:only" | "dark:only"
