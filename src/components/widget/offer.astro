@@ -14,7 +14,6 @@ const { cardsInfo } = Astro.props;
     <Typography type={'title'} size="lg">
         <slot name="title"/>
     </Typography>
-    -------------------------------
     <Typography type="describtion" classes="sm:px-20 px-2 "> <slot name="description"/> </Typography>
     <div class="flex justify-center items-center w-full space-y-8 flex-col mt-5 md:flex-row md:flex-wrap md:space-y-0 md:items-end">
     {cardsInfo.map(element => { return( <Card><Icon name={element.icon} class="w-16 p-2 text-lighten dark:text-darken" slot='logo' /><span slot="title">{element.title}</span> <span>{element.description}</span> </Card> ) })}

@@ -15,17 +15,17 @@ export const content = {
     },
     offer: {
       title: 'What does ',
-      description:"Explore the perks that Integrator gives you when you will use it in your projects to see if it fits your needs, * also this is the list of things that we should achieved in the future*",
+      description:"Explore the perks that Integrator gives you whenever you will use it in your projects to see if it fits your needs, * also this is the list of things that we should achieved in the future*",
       cards: [
         {
           icon: 'ant-design:github-outlined',
           title: 'Open Source',
-          description:'Open-source software anyone can contribute to it and You can read the rules of the contributors, also anyone Can use this project as a base for their project with Customizable themes and components with clean code.',
+          description:'Open-source software anyone can contribute to it and You can read the rules of the contributors, also anyone Can use this project as a base for their project with Customizable themes and high quality components & Layout.',
         },
         {
           icon: 'ant-design:dollar-circle-outlined',
           title: 'No Fees',
-          description: 'No Fees required anyone can use this software in the Community, we are trying to deliver this product for Free Because we have a vision for better web Development With our software, for those who wonder How we will get fund we have a model business.',
+          description: 'No Fees required anyone can use this software in the Community, we are trying to deliver this product for Free Because we have a vision for better web Development With this software, for those who wonder How we will get fund we have a model business.',
         },
         {
           icon: 'ant-design:compass-outlined',
@@ -35,7 +35,7 @@ export const content = {
         {
           icon: 'ant-design:gold-outlined',
           title: 'Integrate 44+ Technology',
-          description:'We will put the most used technologies and softwares, The next step will add more based on the developers needs and  trying to listen and be in touch with other developers from the community, also updating the software quickly.',
+          description:'We will add the most used technologies and softwares The next step will update based on the developers needs and  trying to listen and be in touch with other developers from the community, also updating the software quickly.',
         },
         {
           icon: 'ant-design:pushpin-outlined',
@@ -60,7 +60,7 @@ export const content = {
         },
         {
           title: 'Inclusion-With-AI',
-          description: 'Next step in this project is to build an artificial intelligence that will help you to integrate other softwares to your project easily and automatic, also.',
+          description: 'Next step in this project is to build an artificial intelligence that will help you to integrate other softwares to your project easily and automatic.',
           icon: 'ph:robot-fill',
         },
         {
