@@ -9,12 +9,12 @@ and make the web a better place
 
 ## Features
 
-- 🎯 **_Open Source_** 
+- 🎯 **_Open Source_** software anyone can contribute
 - 🎯 **_No Fees_** required to integrate your favorite technology into your project.
-- 🎯 **_Support 11+ Frameworks_** 
-- 🎯 **_Integrate 44+ Technology_**
+- 🎯 **_Support 11+ Frameworks_** delivering Javascript Frameworks integration to the software at the first
+- 🎯 **_Integrate 44+ Technology_** We will add the most used technologies and softwares The next step will update based on the developers needs
 - 🎯 **_Well Documented_** software, have so many tutorials, also you can integrate with any library or software in an easy way, and explanations are included.
-- 🎯 **_Open API_** 
+- 🎯 **_Open API_** so other developers can talk with our back-end side 
 - 🎯 **_KitStarter_** You can use this repository as a base for your project.
 
 <br>
