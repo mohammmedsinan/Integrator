@@ -56,7 +56,7 @@ export const content = {
         {
           title: 'Stay Up-To-Date',
           description: 'Integrator is one of the softwares that has to be up to date for any update in programming community wether its a framework or a library.',
-          icon: 'ic:round-update',
+          icon: 'ph:arrow-counter-clockwise-duotone',
         },
         {
           title: 'Inclusion-With-AI',
