@@ -1,0 +1,22 @@
+---
+export interface props {
+    title:string;
+    description:string;
+    date:string;
+    views:number;
+}
+
+const {
+    title,
+    description,
+    date,
+    views
+
+} = Astro.props
+---
+
+<div class="cursor-pointer text-lighten dark:text-darken flex flex-col min-w-[400px] mx-5 mt-7 w-[500px] bg-special px-10 py-5 rounded-[20px]">
+    <div class="font-bold w-full flex justify-between text-2xl"><span class="underline-offset-8 underline decoration-lighten dark:decoration-darken">{title}</span> <span>X</span></div>
+    <p class="my-3 text-sm font-semibold">{description}</p>
+    <div class="font-medium text-xs w-full flex justify-between "><span>Last Update : {date}</span> <span>Views : {views}k</span></div>
+</div>

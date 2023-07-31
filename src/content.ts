@@ -4,6 +4,7 @@ export interface content {
     offer: { title: string; description: string; cards: [{ icon: string; title: string; description: string }] };
     goal: { title: string; description: string; content: [{ title: string; description: string; icon: string }] };
   };
+  search:{}
 }
 
 export const content = {
@@ -71,4 +72,7 @@ export const content = {
       ],
     },
   },
+  search: {
+    
+  }
 };
