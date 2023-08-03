@@ -5,4 +5,15 @@ const { title, icon, description} = Astro.props
 ---
 
 
+<div class="min-w-[350px] cursor-pointer m-7 flex flex-col justify-center w-full items-center border border-special rounded-[20px] p-4 max-w-[300px]">
+    <div class="flex flex-col items-center mb-2">
+        <Icon class="text-special w-20" name="mdi:nodejs"/>
+        <p class="text-xl font-semibold text-special">{title}</p>
+        <div class="w-[200%] h-0.5 bg-special"></div>
+    </div>
+    <p class="text-center text-sm text-darken dark:text-lighten">{description}</p>
+</div>
+
+
+
 <!-- <Icon name={element.icon} class="w-14 p-2 text-lighten dark:text-darken" /> -->

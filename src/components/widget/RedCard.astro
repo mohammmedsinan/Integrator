@@ -15,8 +15,8 @@ const {
 } = Astro.props
 ---
 
-<div class="cursor-pointer text-lighten dark:text-darken flex flex-col min-w-[400px] mx-5 mt-7 w-[500px] bg-special px-10 py-5 rounded-[20px]">
-    <div class="font-bold w-full flex justify-between text-2xl"><span class="underline-offset-8 underline decoration-lighten dark:decoration-darken">{title}</span> <span>X</span></div>
-    <p class="my-3 text-sm font-semibold">{description}</p>
-    <div class="font-medium text-xs w-full flex justify-between "><span>Last Update : {date}</span> <span>Views : {views}k</span></div>
+<div class="transition-all hover:shadow-[0px_0px_7px_var(--int-color-accent)] hover:scale-105 hover:text-lighten hover:dark:text-darken hover:bg-special cursor-pointer text-special flex flex-col group mx-5 mt-7 w-[500px]  px-10 py-5 rounded-[20px] border-2 border-special">
+    <div class="font-bold w-full flex justify-between text-2xl"><span class="underline-offset-8 underline decoration-special group-hover:decoration-lighten group-hover:dark:decoration-darken">{title}</span> <span>X</span></div>
+    <p class="my-3 text-sm font-normal group-hover:font-semibold">{description}</p>
+    <div class="font-light text-xs w-full flex justify-between group-hover:font-semibold "><span>Last Update : {date}</span> <span>Views : {views}k</span></div>
 </div>
