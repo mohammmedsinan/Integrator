@@ -63,7 +63,7 @@ export const headerData = {
     //   href: getBlogPermalink(),
     // },
   ],
-  actions: [{ type: 'ghost',size:"sm", text: 'Integration', href: 'https://github.com/mohammmedsinan/Integrator' }],
+  actions: [{ type: 'ghost',size:"sm", text: 'Integrate', href: '/search' }],
 };
 
 export const footerData = {
