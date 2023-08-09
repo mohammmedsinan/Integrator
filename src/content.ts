@@ -12,7 +12,7 @@ export const content = {
     hero: {
       title: 'is free open-source & easy-to-use software',
       description: "Are you facing a lot of challenges while you are trying to integrate a certain software into your website In addition to the time wasted from you while you are trying to read and understand the documentation to integrate this software? , Integrator will solve your problems, and boost your productivity and you don't have to pay any fees it's a free open source software and you can contribute to it and make web better place.",
-      heroLinks: { link1: 'https://github.com/mohammmedsinan/Integrator', link2: 'https://github.com/mohammmedsinan/Integrator' },
+      heroLinks: { link1: '/search', link2: 'https://github.com/mohammmedsinan/Integrator' },
     },
     offer: {
       title: 'What does ',
