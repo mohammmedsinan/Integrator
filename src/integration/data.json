@@ -1,0 +1,56 @@
+[
+    {
+        "name":"react",
+        "icon":"default",
+        "description":"Lorem Ipsum",
+        "color":"#fff"
+    },
+    {
+        "name":"next",
+        "icon":"default",
+        "description":"Lorem Ipsum",
+        "color":"#fff"
+    },
+    {
+        "name":"angular",
+        "icon":"default",
+        "description":"Lorem Ipsum",
+        "color":"#fff"
+    },
+    {
+        "name":"astro",
+        "icon":"default",
+        "description":"Lorem Ipsum",
+        "color":"#fff"
+    },
+    {
+        "name":"nodejs",
+        "icon":"default",
+        "description":"Lorem Ipsum",
+        "color":"#fff"
+    },
+    {
+        "name":"svelte",
+        "icon":"default",
+        "description":"Lorem Ipsum",
+        "color":"#fff"
+    },
+    {
+        "name":"ember",
+        "icon":"default",
+        "description":"Lorem Ipsum",
+        "color":"#fff"
+    },
+    {
+        "name":"backbone",
+        "icon":"default",
+        "description":"Lorem Ipsum",
+        "color":"#fff"
+    },
+    {
+        "name":"vue",
+        "icon":"default",
+        "description":"Lorem Ipsum",
+        "color":"#fff"
+    }
+]

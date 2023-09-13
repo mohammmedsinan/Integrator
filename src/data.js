@@ -4,7 +4,7 @@ export const headerData = {
   links: [
     {
       text: 'Home',
-      href: '#',
+      href: '/',
       // links: [
       //   {
       //     text: 'Sass',
@@ -21,8 +21,8 @@ export const headerData = {
       // ],
     },
     {
-      text: 'Integration',
-      href: '#',
+      text: 'Integrate',
+      href: '/search',
       // links: [
       //   {
       //     text: 'Features',
