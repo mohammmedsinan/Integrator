@@ -1,0 +1,53 @@
+---
+//===================== Dynmic Routes ========================================
+import {technologies} from '../../integration/data'
+export function getStaticPaths() { return technologies.map(technology => technology.supportedTechnologies.map(e=> ({params:{slug:technology.name,tech:e.name}})))}
+const { slug,tech } = Astro.params;
+const pageData = technologies.find(e=> e.name === slug)
+//-===========================================================================
+
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+import { Icon } from 'astro-icon'
+//==================Widgets=======================
+import 'highlight.js/styles/github-dark-dimmed.css'
+//================Content========================
+import Data from "../../integration/data"
+Data();
+//=========================================
+const meta = {
+  title: SITE.title,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+<Layout {meta}>
+<script>
+import hljs from 'highlight.js'; window.addEventListener("load", () => { hljs.highlightAll(); });
+const parent = document.querySelector("."+window.location.href.split('/')[4].split('-')[1])
+const child = parent.getElementsByTagName("svg")[0];
+parent.style="background:red; box-shadow:0px 0px 15px var(--int-color-accent); background-color:var(--int-color-accent);transform:scale(1.2);";
+child.style="color:var(--int-color-secondary)!important ;";
+</script>
+<div class="flex flex-col justify-center items-center bg-lighten dark:bg-darken">
+    <div class="lg:w-[80%] w-full">
+            <div class="flex items-center justify-center flex-col sm:flex-row">
+                <Icon name={pageData?.icon} class="text-special w-[15vw] min-w-[200px]"/>
+                <h1 class="text-8xl capitalize text-darken dark:text-lighten mb-6 sm:mb-0">{slug}</h1>
+            </div>
+        <div class="w-[45vw] h-1 bg-darken dark:bg-lighten m-auto rounded-full"/>
+        <div class="border-darken dark:border-lighten bg-lighten dark:bg-darken sm:border-2 sm:m-10 my-5 rounded-3xl pb-10">
+            <div class="flex justify-center my-4 flex-wrap"> {pageData?.supportedTechnologies.map(element => <a id='rr' class:list={["w-12 h-12 bg-darken dark:bg-lighten rounded-full mx-2 cursor-pointer transition-all  hover:scale-125 mt-3 flex justify-center items-center group",[element.name]]} href={`/search/${pageData.name}-${element.name}`}><Icon name={element.icon} class="w-8 transition-all hover:dark:text-lighten text-lighten dark:text-darken group-hover:text-lighten"/></a>)}</div>
+            <div class="sm:mx-14 mx-5">
+            {pageData?.supportedTechnologies.map(e=> {
+                return e.name === tech&& e.explanation.map(element => {
+                return(<div> {element.explanation&&<p>{element.explanation}</p>}{element.code !== null&&<pre><code class="hljs language-javascript rounded-xl my-5"> {element?.code}</code></pre>}</div>)}
+                )})}
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+#rr:hover{ box-shadow:0px 0px 15px var(--int-color-accent); background-color:var(--int-color-accent);}
+</style>
+</Layout>

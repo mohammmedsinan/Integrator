@@ -24,14 +24,14 @@ const meta = {
     <!-- ------------- Search Bar ------------------- -->
     <div class="flex items-center w-full justify-center group ">
       <input id="searchBar" class="transition-all bg-lighten dark:bg-darken border-2 border-special rounded-s-[20px] w-[70%] py-1.5 px-3 outline-none  group-hover:shadow-[0px_0px_7px_var(--int-color-accent)]" placeholder="Type the technology or the framework ..."/>
-      <div class="transition-all font-semibold bg-special py-2 px-5 text-lighten dark:text-darken rounded-e-[10px] cursor-pointer group-hover:shadow-[0px_0px_7px_var(--int-color-accent)]">Search</div>
+      <button id="clicker" class="transition-all font-semibold bg-special py-2 px-5 text-lighten dark:text-darken rounded-e-[10px] cursor-pointer group-hover:shadow-[0px_0px_7px_var(--int-color-accent)]">Search</button>
     </div>
     <div class="h-[2px] bg-lighten dark:bg-darken w-[40vw] mb-10 mt-20" />
     <!-- --------------- Main Cards -------------------- -->
     <div class="flex justify-around w-full flex-wrap border-special sm:border rounded-[30px] pb-5">
-      <ReadCard title="Front-end" description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis velit doloribus ut nostrum libero impedit nobis. Ducimus aliquam atque in." date="2021/31/02" views={10}/>
-      <ReadCard title="Back-end" description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis velit doloribus ut nostrum libero impedit nobis. Ducimus aliquam atque in." date="2021/31/02" views={10}/>
-      <ReadCard title="Dev-Ops" description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis velit doloribus ut nostrum libero impedit nobis. Ducimus aliquam atque in." date="2021/31/02" views={10}/>
+      <ReadCard href="/search/frontend" title="Front-end" description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis velit doloribus ut nostrum libero impedit nobis. Ducimus aliquam atque in." date="2021/31/02" views={10}/>
+      <ReadCard href="/search/backend" title="Back-end" description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis velit doloribus ut nostrum libero impedit nobis. Ducimus aliquam atque in." date="2021/31/02" views={10}/>
+      <ReadCard href="/search/devops" title="Dev-Ops" description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis velit doloribus ut nostrum libero impedit nobis. Ducimus aliquam atque in." date="2021/31/02" views={10}/>
     </div>
     <div class="h-[2px] bg-darken dark:bg-lighten w-[40vw] mb-10 mt-20" />
     <!-- ------------- Technology Cards ------------------- -->
@@ -46,8 +46,7 @@ const meta = {
       <TechCard title="NodeJS" icon="Nodejs" description="simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer."/>
     </div>
   </div>
-
 <script>
-  document.querySelector('#searchBar').addEventListener('change', function (e) { window.location.href=`/search/${e.target.value}` })
+  document.querySelector('#clicker').addEventListener('click', function () { window.location.href=`/search/${document.querySelector('#searchBar').value}` })
 </script>
 </Layout>

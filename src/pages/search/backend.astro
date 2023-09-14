@@ -1,0 +1,16 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+import {technologies} from '../../integration/data'
+//==================Widgets=======================
+//================Content========================
+
+const meta = {
+  title: SITE.title,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+const frontEndTechnologies = technologies.filter(e => e.catagory === "back-end");
+---
+<Layout {meta}>
+</Layout>
