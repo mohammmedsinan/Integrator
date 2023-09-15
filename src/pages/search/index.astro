@@ -8,10 +8,11 @@ import ReadCard from '~/components/widget/RedCard.astro'
 import TechCard from '~/components/widget/TechCard.astro'
 
 //================Content========================
-import Data from "../../integration/data"
-Data();
+import {technologies} from "../../integration/data"
+const frontEndTechnologies = technologies.filter(e => e.catagory === "front-end");
+const devOpsTechnologies = technologies.filter(e => e.catagory === "dev-ops");
+const backEndTechnologies = technologies.filter(e => e.catagory === "back-end");
 //=========================================
-
 const meta = {
   title: SITE.title,
   description: SITE.description,
@@ -36,17 +37,13 @@ const meta = {
     <div class="h-[2px] bg-darken dark:bg-lighten w-[40vw] mb-10 mt-20" />
     <!-- ------------- Technology Cards ------------------- -->
     <div class="flex flex-wrap w-full justify-around border-special sm:border rounded-[30px] ">
-      <TechCard title="NodeJS" icon="Nodejs" description="simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer."/>
-      <TechCard title="NodeJS" icon="Nodejs" description="simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer."/>
-      <TechCard title="NodeJS" icon="Nodejs" description="simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer."/>
-      <TechCard title="NodeJS" icon="Nodejs" description="simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer."/>
-      <TechCard title="NodeJS" icon="Nodejs" description="simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer."/>
-      <TechCard title="NodeJS" icon="Nodejs" description="simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer."/>
-      <TechCard title="NodeJS" icon="Nodejs" description="simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer."/>
-      <TechCard title="NodeJS" icon="Nodejs" description="simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer."/>
+      {frontEndTechnologies.map(element => <TechCard link={`/search/${element.name.toLocaleLowerCase()}`} title={element.name} icon={element.icon} description={element.description}/>)}
+      {devOpsTechnologies.map(element => <TechCard link={`/search/${element.name.toLocaleLowerCase()}`} title={element.name} icon={element.icon} description={element.description}/>)}
+      {backEndTechnologies.map(element => <TechCard link={`/search/${element.name.toLocaleLowerCase()}`} title={element.name} icon={element.icon} description={element.description}/>)}
+    
     </div>
   </div>
 <script>
-  document.querySelector('#clicker').addEventListener('click', function () { window.location.href=`/search/${document.querySelector('#searchBar').value}` })
+  document.querySelector('#clicker').addEventListener('click', function () { window.location.href=`/search/${document.querySelector('#searchBar').value.toLowerCase()}` })
 </script>
 </Layout>

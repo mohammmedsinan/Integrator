@@ -3,14 +3,21 @@ import { SITE } from '~/config.mjs';
 import Layout from '~/layouts/PageLayout.astro';
 import {technologies} from '../../integration/data'
 //==================Widgets=======================
+import TechCard from '~/components/widget/TechCard.astro'
 //================Content========================
-
-const meta = {
-  title: SITE.title,
-  description: SITE.description,
-  dontUseTitleTemplate: true,
-};
+const meta = { title: SITE.title, description: SITE.description, dontUseTitleTemplate: true};
 const frontEndTechnologies = technologies.filter(e => e.catagory === "back-end");
 ---
 <Layout {meta}>
+  <div class="flex flex-col justify-center items-center m-3">
+    <h1 class="text-center text-7xl my-10 text-darken dark:text-lighten">Browse <span class="text-special">&</span> Search</h1>
+    <!-- ------------- Search Bar ------------------- -->
+    <div class="flex items-center w-full justify-center group ">
+      <input id="searchBar" class="transition-all bg-lighten dark:bg-darken border-2 border-special rounded-s-[20px] w-[70%] py-1.5 px-3 outline-none  group-hover:shadow-[0px_0px_7px_var(--int-color-accent)]" placeholder="Type the technology or the framework ..."/>
+      <button id="clicker" class="transition-all font-semibold bg-special py-2 px-5 text-lighten dark:text-darken rounded-e-[10px] cursor-pointer group-hover:shadow-[0px_0px_7px_var(--int-color-accent)]">Search</button>
+    </div>
+    <div class="h-[2px] bg-lighten dark:bg-darken w-[40vw] mb-10 mt-20" />
+      <div class="flex justify-around">
+        {frontEndTechnologies.map(element => <TechCard title={element.name} icon={element.icon} description={element.description}/>)}
+      </div>
 </Layout>
