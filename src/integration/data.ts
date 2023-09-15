@@ -1,6 +1,7 @@
 import data from './data.json'
 
 function frameWorkPicker(name: string | "react" | "next" , explanation=[{}]) { return { ...data.find(e => e.name === name),explanation } }
+
 export const technologies = [
 {name: 'redux',
 icon: "bx:bxl-redux",

@@ -6,7 +6,7 @@ export function getStaticPaths() { return technologies.map(technology => {
     return {params:{slug:lowerCaseTechnology}}
 })}
 const { slug} = Astro.params;
-const pageData = technologies.find(e=> e.name === slug)
+const pageData = technologies.find(e=> e.name.toLocaleLowerCase() === slug)
 //===========================================================================
 
 import { SITE } from '~/config.mjs';
@@ -29,7 +29,7 @@ const meta = {
         <div class="flex items-center justify-center flex-col sm:flex-row"> <Icon name={pageData?.icon} class="text-special w-[15vw] min-w-[200px]"/> <h1 class="text-8xl capitalize text-darken dark:text-lighten mb-6 sm:mb-0">{slug}</h1></div>
             <div class="w-[45vw] h-1 bg-darken dark:bg-lighten m-auto rounded-full"/>
                 <div class="border-darken dark:border-lighten bg-lighten dark:bg-darken sm:border-2 sm:m-10 my-5 rounded-3xl pb-10">
-                    <div class="flex justify-center my-4 flex-wrap"> {pageData?.supportedTechnologies.map(element => <a id="rr" class="w-12 h-12 bg-darken dark:bg-lighten rounded-full mx-2 cursor-pointer transition-all  hover:scale-125 mt-3 flex justify-center items-center" href={`/search/${pageData.name}-${element.name}`}><Icon name={element.icon} class="w-8 transition-all hover:dark:text-lighten text-lighten dark:text-darken"/></a>)}</div>
+                    {pageData?.supportedTechnologies &&<div class="flex justify-center my-4 flex-wrap"> {pageData?.supportedTechnologies.map(element => <a id="rr" class="w-12 h-12 bg-darken dark:bg-lighten rounded-full mx-2 cursor-pointer transition-all  hover:scale-125 mt-3 flex justify-center items-center" href={`/search/${pageData.name}-${element.name}`}><Icon name={element.icon} class="w-8 transition-all hover:dark:text-lighten text-lighten dark:text-darken"/></a>)}</div>}
                 <div class="sm:mx-14 mx-5">{pageData?.content}</div>
         </div>
     </div>
