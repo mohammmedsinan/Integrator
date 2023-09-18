@@ -1,7 +1,7 @@
 ---
 import { SITE } from '~/config.mjs';
 import Layout from './PageLayout.astro';
-import {Icon} from 'astro-icon'
+// import {Icon} from 'astro-icon'
 //==================Widgets=======================
 import TechCard from '~/components/widget/TechCard.astro'
 //================Content========================
@@ -15,11 +15,16 @@ const meta = {
   description: SITE.description,
   dontUseTitleTemplate: true,
 };
-const {type} = Astro.props
+export interface props {
+  title:string;
+  type:string;
+  search:string;
+}
+const {type,title,search} = Astro.props
 ---
 <Layout {meta}>
   <div class="flex flex-col justify-center items-center m-3">
-    <h1 class="text-center text-7xl my-10 text-darken dark:text-lighten">Browse <span class="text-special">&</span> Search</h1>
+    <h1 class="text-center text-7xl my-10 text-darken dark:text-lighten"><Fragment set:html={title}/></h1>
     <!-- ------------- Search Bar ------------------- -->
     <div class="flex items-center w-full justify-center group ">
       <input id="searchBar" class="transition-all bg-lighten dark:bg-darken border-2 border-special rounded-s-[20px] w-[70%] py-1.5 px-3 outline-none  group-hover:shadow-[0px_0px_7px_var(--int-color-accent)]" placeholder="Type the technology or the framework ..."/>
@@ -32,17 +37,25 @@ const {type} = Astro.props
     <!-- ------------- Technology Cards ------------------- -->
     <div class="flex flex-wrap w-full justify-around border-special sm:border rounded-[30px] ">
       {type === "front-end"&&frontEndTechnologies.map(element => <TechCard link={`/search/${element.name.toLocaleLowerCase()}`} title={element.name} icon={element.icon} description={element.description}/>)}
-      {type === "back-end"&&devOpsTechnologies.map(element => <TechCard link={`/search/${element.name.toLocaleLowerCase()}`} title={element.name} icon={element.icon} description={element.description}/>)}
-      {type === "dev-ops"&&backEndTechnologies.map(element => <TechCard link={`/search/${element.name.toLocaleLowerCase()}`} title={element.name} icon={element.icon} description={element.description}/>)}
+      {type === "back-end"&&backEndTechnologies.map(element => <TechCard link={`/search/${element.name.toLocaleLowerCase()}`} title={element.name} icon={element.icon} description={element.description}/>)}
+      {type === "dev-ops"&&devOpsTechnologies.map(element => <TechCard link={`/search/${element.name.toLocaleLowerCase()}`} title={element.name} icon={element.icon} description={element.description}/>)}
     </div>
   </div>
+  <div id="searchType" searchType={search}/>
 </Layout>
 <script>
 import {technologies} from "../integration/data";
 const HtmlWrapper = document.querySelector('#cardWraper');
+const searchType = document.getElementById('searchType')?.attributes?.searchType?.nodeValue;
+const DataType = technologies.filter(e => {
+  if(searchType === "all") return e
+  if(searchType === "front-end") return e.catagory==="front-end"
+  if(searchType === "back-end") return e.catagory === "back-end"
+  if(searchType === "dev-ops") return e.catagory === "dev-ops"
+});
 function onClickHandler () {
   const inpitValue = document.querySelector('#searchBar')?.value.toLowerCase();
-  const data = technologies.filter(e => e.name.toLowerCase().includes(inpitValue));
+  const data = DataType.filter(e => e.name.toLowerCase().includes(inpitValue));
   const reduceData = [data[0],data[1],data[2]];
   HtmlWrapper.innerHTML = '';
   reduceData.map(element => {
@@ -50,7 +63,7 @@ function onClickHandler () {
     const containerTitle = document.createElement("span");
     divContainer.classList.add('bg-lighten', 'dark:bg-darken', 'border-special', 'w-[30%]', 'my-2' ,'px-4' ,'py-2' ,'border-2' ,'rounded-[20px]','cursor-pointer' ,'flex' ,'items-center' ,'group' ,'transition-all' ,'hover:dark:bg-special', 'hover:bg-special');
     containerTitle.innerHTML = element.name;
-    divContainer.href = `/search/${element.name}`
+    divContainer.href = `/search/${element.name.toLocaleLowerCase()}`
     divContainer.appendChild(containerTitle);
     HtmlWrapper?.appendChild(divContainer);
   })

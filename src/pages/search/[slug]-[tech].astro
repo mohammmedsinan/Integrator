@@ -1,7 +1,7 @@
 ---
 //===================== Dynmic Routes ========================================
 import {technologies} from '../../integration/data'
-export function getStaticPaths() { return technologies.map(technology => technology.supportedTechnologies.map(e=> ({params:{slug:technology.name,tech:e.name}})))}
+export function getStaticPaths() { return technologies.map(technology => technology.supportedTechnologies.map(e=> ({params:{slug:technology.name.toLocaleLowerCase(),tech:e.name?.toLocaleLowerCase()}})))}
 const { slug,tech } = Astro.params;
 const pageData = technologies.find(e=> e.name === slug)
 //-===========================================================================

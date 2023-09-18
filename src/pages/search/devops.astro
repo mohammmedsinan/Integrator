@@ -8,4 +8,4 @@ import {technologies} from '../../integration/data'
 const meta = { title: SITE.title, description: SITE.description, dontUseTitleTemplate: true};
 const frontEndTechnologies = technologies.filter(e => e.catagory === "dev-ops");
 ---
-<Layout {meta} type="dev-ops"/>
+<Layout {meta} type="dev-ops" title={`Browse <span class="text-special">&</span> Search <br /> <span class="text-7xl">Dev<span class="text-special">-</span>Ops</span> `} search="dev-ops"/>

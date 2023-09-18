@@ -14,7 +14,7 @@ const meta = {
   dontUseTitleTemplate: true,
 };
 ---
-<Layout {meta} type="front-end">
+<Layout {meta} type="front-end" title={`Browse <span class="text-special">&</span> Search <br />`} search="all">
     <div class="flex justify-around w-full flex-wrap border-special sm:border rounded-[30px] pb-5">
       <ReadCard href="/search/frontend" title="Front-end" description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis velit doloribus ut nostrum libero impedit nobis. Ducimus aliquam atque in." date="2021/31/02" views={10}/>
       <ReadCard href="/search/backend" title="Back-end" description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis velit doloribus ut nostrum libero impedit nobis. Ducimus aliquam atque in." date="2021/31/02" views={10}/>

@@ -1,7 +1,7 @@
 import defaultImage from './assets/visuals/readme.jpeg';
 
 const CONFIG = {
-  name: 'AstroWind',
+  name: 'Integrator',
 
   origin: 'https://integrat0r.netlify.app/',
   basePathname: '/',

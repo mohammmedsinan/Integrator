@@ -1,11 +1,11 @@
 ---
 import { SITE } from '~/config.mjs';
 import Layout from '~/layouts/SearchLayout.astro';
-import {technologies} from '../../integration/data'
+// import {technologies} from '../../integration/data'
 //==================Widgets=======================
-import TechCard from '~/components/widget/TechCard.astro'
+// import TechCard from '~/components/widget/TechCard.astro'
 //================Content========================
 const meta = { title: SITE.title, description: SITE.description, dontUseTitleTemplate: true};
-const frontEndTechnologies = technologies.filter(e => e.catagory === "back-end");
+// const frontEndTechnologies = technologies.filter(e => e.catagory === "back-end");
 ---
-<Layout {meta} type="back-end" />
+<Layout {meta} type="back-end" title={`Browse <span class="text-special">&</span> Search <br /> <span class="text-7xl">Back<span class="text-special">-</span>End</span> `} search="back-end"/>
